@@ -1,7 +1,7 @@
 Author: <br>
 NetID: <br>
 Date: <br>
-Project Name: lab0-part1
+Project Name: lab1-part1
 
 # Description
 In this lab, you will create a millisecond delay using Timer 1 to control the rate at which several LEDs blink. These LEDs will represent a binary number and will count up continuously. A switch will toggle the rate at which the binary number counts up between an original rate and twice the original rate. The switch will do so using an interrupt service routine.
