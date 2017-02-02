@@ -21,4 +21,4 @@ LED 4 --  RA3
 *It is up to you to figure out which pin number on the microcontroller corresponds to RA0, RA1, RA2, RA3*
 
 # Rubric
-![Lab 1 Part 1](https://storage.googleapis.com/ece-gitlab/lab1-part1-rubric.png)
+![Lab 1 Part 1](https://storage.googleapis.com/ece-gitlab/lab1p1-rubric.png)
