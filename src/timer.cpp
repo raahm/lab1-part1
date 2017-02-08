@@ -26,8 +26,14 @@ void delayMs(unsigned int delay){
   TCCR1B &= ~(1 << CS10 | 1 << CS11);
   TCCR1B |= (1 << CS12);
   // set the OCR1A to 62,500 - 1
-  OCR1AH = 0xF4;
-  OCR1AL = 0x24;
+  // this counts up to approximately one second
+  if(delay == 1) {
+    OCR1AH = 0x18;
+    OCR1AL = 0x6A;
+  } else if(delay == 0){
+    OCR1AH = 0xC;
+    OCR1AL = 0x35;
+  }
   //enable the interrupt for the COMPA event
   TIMSK1 |= (1 << OCIE1A);
 }

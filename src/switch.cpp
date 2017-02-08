@@ -14,5 +14,5 @@ void initSwitchPB3(){
   // enable pin-change interrupts
   PCICR |= (1 << PCIE0);
   // enable interrupts on PB3
-  PCMSK0 |= ( 1 << PCINT2 | 1 << PCINT3);
+  PCMSK0 |= (1 << PCINT3);
 }
